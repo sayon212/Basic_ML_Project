@@ -57,9 +57,9 @@ origin is variable that stores repo url link
 - Send latest commit to Git
 
 ### 9. CI/CD
-- Heroku Account Name = sayon.biems@gmail.com
-- Heroku API Key = c313f07b-02aa-4c4c-8d39-74280a4028e0
-- Heroku app = basic-project-app
+- Heroku Account Name
+- Heroku API Key
+- Heroku app
 
 ### 10. Create Docker File
 - Install python 3.8
@@ -105,3 +105,4 @@ Stop Docker Image:
 ```
 docker stop <container_id>
 ```
+### 13. Push Latest Code to Git
