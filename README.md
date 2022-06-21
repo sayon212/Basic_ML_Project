@@ -31,7 +31,7 @@ git status
 ```
 Add files:
 ```
-git add.
+git add .
 ```
 Check version:
 ```
@@ -40,4 +40,68 @@ git log
 Commit:
 ```
 git commit -m "any_message_here"
+```
+Check remote url:
+```
+git remote -v
+```
+Push latest commit to Git: 
+```
+git push origin main
+```
+origin is variable that stores repo url link
+### 8. Steps for Git:
+- Git add
+- Git commit
+- This commit happend in local git repo
+- Send latest commit to Git
+
+### 9. CI/CD
+- Heroku Account Name = sayon.biems@gmail.com
+- Heroku API Key = c313f07b-02aa-4c4c-8d39-74280a4028e0
+- Heroku app = basic-project-app
+
+### 10. Create Docker File
+- Install python 3.8
+- Specify files and folders we dont want in .dockerignore
+- Copy required files from current folder "." to app folder which will be present
+by default in docker
+- Change current drectory to app folder
+- Install libraries using pip install -r requirements.txt
+- Expose a port
+- Form IP address and run the app using gunicorn
+
+CMD gunicorn --workers=4 --bind 0.0.0.0.:$PORT app:app
+
+CMD = to execute the gunicorn command.
+
+guicorn = to run the command.
+
+bind = 0.0.0.0.:PORT = ip address with port.
+
+first app = python file name.
+
+second app = application name.
+
+### 11. Create Docker Image
+```
+docker build -t <image_name>:<tag_name> <location_of_docker_file>
+```
+Use . as location for current directory
+
+To list docker images:
+```
+docker images
+```
+### 12. Run Docker Image
+```
+docker run -p 5000:5000 -e PORT=5000 <image_id>
+```
+Check running container
+```
+docker ps
+```
+Stop Docker Image:
+```
+docker stop <container_id>
 ```
