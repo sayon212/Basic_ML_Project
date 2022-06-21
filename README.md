@@ -71,13 +71,13 @@ by default in docker
 - Expose a port
 - Form IP address and run the app using gunicorn
 
-CMD gunicorn --workers=4 --bind 0.0.0.0.:$PORT app:app
+CMD gunicorn --workers=4 --bind 0.0.0.0:$PORT app:app
 
 CMD = to execute the gunicorn command.
 
 guicorn = to run the command.
 
-bind = 0.0.0.0.:PORT = ip address with port.
+bind = 0.0.0.0:PORT = ip address with port.
 
 first app = python file name.
 
