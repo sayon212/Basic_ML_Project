@@ -105,4 +105,9 @@ Stop Docker Image:
 ```
 docker stop <container_id>
 ```
-### 13. Push Latest Code to Git
+### 13. Local Testing done
+### 14. Create folder structure .github\workflows\main.yaml
+### 15. Add yaml template which is a standard file
+### 16. Push Latest Code to Git
+### 17. Create 3 secrets - Email, API Key and App name in Github with exact same names as in yaml
+### 18. At runtime the yaml file will take these secrets and create the release to Heroku
