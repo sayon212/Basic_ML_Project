@@ -31,7 +31,7 @@ git status
 ```
 Add files:
 ```
-git add.
+git add .
 ```
 Check version:
 ```
