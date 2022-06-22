@@ -111,3 +111,8 @@ docker stop <container_id>
 ### 16. Push Latest Code to Git
 ### 17. Create 3 secrets - Email, API Key and App name in Github with exact same names as in yaml
 ### 18. At runtime the yaml file will take these secrets and create the release to Heroku
+
+Use following to install python libraries
+```
+python setup.py install
+```
