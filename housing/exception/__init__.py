@@ -41,7 +41,12 @@ class HousingException(Exception):
         error_message = f"Error occured in script: [{file_name}] at line number: [{line_number}] error message: [{error_message}]"
         return error_message
 
-# Even if we dont write below lines then also it is working
+        '''
+        Even if we dont write below lines then also it is working
+        str function defines what should be displayed when we print the object
+        like print(HousingException) and repr is representation. Check in
+        Jupyter notebook
+        '''
     def __str__(self):
         return self.error_message
 
