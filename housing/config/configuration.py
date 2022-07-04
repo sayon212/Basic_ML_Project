@@ -44,7 +44,10 @@ class Configuration:
             raise HousingException(e,sys) from e
 
     def get_data_validation_config(self) -> DataValidationConfig:
-        pass
+        try:
+            pass
+        except Exception as e:
+            raise HousingException(e,sys) from e
 
     def get_data_transformation_config(self) -> DataTransformationConfig:
         pass

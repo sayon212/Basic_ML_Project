@@ -36,7 +36,7 @@ class HousingException(Exception):
         recent exception in trackback (tb) module.
         '''
 
-        line_number = exec_tb.tb_frame.f_lineno
+        line_number = exec_tb.tb_lineno
         file_name = exec_tb.tb_frame.f_code.co_filename
         error_message = f"Error occured in script: [{file_name}] at line number: [{line_number}] error message: [{error_message}]"
         return error_message

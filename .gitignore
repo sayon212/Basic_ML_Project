@@ -1,1 +1,4 @@
-venv_basic_ml/
+myenv/
+housing/artifact
+housing_logs/
+notebook/

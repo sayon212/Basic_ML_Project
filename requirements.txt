@@ -3,5 +3,5 @@ gunicorn
 numpy
 pandas
 sklearn
--e .
 PyYAML
+-e .
